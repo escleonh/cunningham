@@ -1,5 +1,20 @@
 import './Nav-bar.css';
 const Navbar = () => {
+
+  
+    const handleMenuIconClick = (e)=>{
+        let menuIcon = document.querySelectorAll('.iconLine');
+        let slidebarmenu = document.querySelector('.slidebarmenu');
+        let menuLines = [...menuIcon]
+        slidebarmenu.classList.toggle('slidebar-show');
+
+        menuLines.forEach((element)=>{
+            // console.log(element);
+            element.classList.toggle('whiteMenuIcon');
+
+        });
+    };
+
     return <nav>
     <div className='mobileLeftNavCol'></div>
     <div>LOGO</div>
@@ -14,10 +29,10 @@ const Navbar = () => {
         <a href="#">Free Quote</a>
     </div>
 
-    <div className="menuIcon">
-        <div></div>
-        <div></div>
-        <div></div>
+    <div className="menuIcon" onClick={(e)=>handleMenuIconClick(e)}>
+        <div className='iconLine'></div>
+        <div className='iconLine'></div>
+        <div className='iconLine'></div>
     </div>
 
     <div className='slidebarmenu'>
