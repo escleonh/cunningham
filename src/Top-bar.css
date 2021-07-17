@@ -1,0 +1,22 @@
+.topBar{
+    background-color: black;
+    padding: 5px;
+}
+.topBar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+
+.topBar ul li{
+    display: inline-block;
+}
+.topBar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
