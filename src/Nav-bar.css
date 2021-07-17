@@ -4,11 +4,11 @@ nav{
     padding: 20px;
     background-color: rgb(242, 241, 241);
 }
-nav ul{
+nav .mainMenu ul{
     display: flex;
     gap: 10px;
 }
-nav ul li{
+nav .mainMenu ul li{
     display: inline-block;
 }
 nav a{
@@ -16,4 +16,58 @@ nav a{
     text-decoration: none;
     color: black;
 }
+.menuIcon{
+    
+    display: none;
+}
+.menuIcon div{
+    width: 25px;
+    height:5px;
+    background-color: black; 
+    
+}
 
+.slidebarmenu{
+    display: none;
+}
+.slidebarmenu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+.mobileLeftNavCol{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    .slidebarmenu{
+        /* display: block; */
+    }
+    .menuIcon{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        
+    }
+    .mainMenu{
+        display: none;
+    }
+    .quoteBtn{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+        
+    }
+    .mobileLeftNavCol{
+        display: block;
+    }
+}
