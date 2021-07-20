@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
 
 }
 .companyName{
@@ -44,15 +44,19 @@
     color: black;
 }
 .homeCTABtns button:hover{
-    background-color: yellow;
+    background-color: rgb(238, 238, 4);
+}
+.homeCTABtns a{
+    color: black;
+    text-decoration: none;
 }
 .titleHeading{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
 }
 .servicesContiner{
     /* margin-top: 40px; */
-    height: 30vh;
+    /* height: 30vh; */
     display: flex;
     width: 80vw;
     margin: 0 auto;
@@ -62,6 +66,7 @@
     gap: 25px;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: 10vh;
 }
 .servicesContiner>div{
 max-width: 150px;
@@ -79,7 +84,15 @@ gap: 15px;
     height: 130px;
     width: 150px;
 }
-
+.OurWorkContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.OurWorkContainer img{
+    width: 33%;
+}
 @media only screen and (max-width: 600px){
 
     .companyName{
@@ -91,4 +104,18 @@ gap: 15px;
     .grassBgContainer{
         height: 30vh;
     }
+    .servicesContiner  div{
+        max-width: 70vw;
+    }
+    .serviceOneImg{
+        width: 40vw;
+        margin: 0 auto;
+    }
+    .serviceDescription{
+        /* width: 60vw;
+        margin: 0 auto; */
+    }
+.OurWorkContainer img{
+    width: 90%;
+}
 }

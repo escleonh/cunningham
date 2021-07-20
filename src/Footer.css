@@ -1,0 +1,17 @@
+footer{
+    background-color: black;
+    margin-top: 5vh;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+footer p{
+    padding: 5px;
+}
+.socialMedia{
+    padding-top: 10px;
+}
+footer a{
+    color:white
+}

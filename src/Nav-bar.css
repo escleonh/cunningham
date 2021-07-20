@@ -1,3 +1,6 @@
+body .menuOpen{
+    overflow: hidden;
+}
 nav{
     display: flex;
     justify-content: space-between;

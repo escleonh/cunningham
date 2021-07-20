@@ -1,4 +1,6 @@
 import './Nav-bar.css';
+import { HashLink as Link } from 'react-router-hash-link';
+
 const Navbar = () => {
 
   
@@ -7,6 +9,7 @@ const Navbar = () => {
         let slidebarmenu = document.querySelector('.slidebarmenu');
         let menuLines = [...menuIcon]
         slidebarmenu.classList.toggle('slidebar-show');
+        document.body.classList.toggle('hidden');
 
         menuLines.forEach((element)=>{
             // console.log(element);
@@ -15,14 +18,16 @@ const Navbar = () => {
         });
     };
 
+
     return <nav>
     <div className='mobileLeftNavCol'></div>
     <div>LOGO</div>
     <div className='mainMenu'>
     <ul >
-        <li><a href="">Services</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><Link to="#services" >Services</Link></li>
+        <li><Link to="#ourWork">Our Work</Link></li>
+        <li><Link to="/About">About Us</Link></li>
+        <li><Link to="/Contact">Contact Us</Link></li>
     </ul>
     </div>
     <div className='quoteBtn'>
@@ -37,9 +42,12 @@ const Navbar = () => {
 
     <div className='slidebarmenu'>
     <ul>
-        <li><a href="">Services</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li onClick={(e)=>handleMenuIconClick(e)}><Link to="/" >Home</Link></li>
+        <li onClick={(e)=>handleMenuIconClick(e)}><Link to="#services" >Services</Link></li>
+        <li onClick={(e)=>handleMenuIconClick(e)}><Link to="#ourWork">Our Work</Link></li>
+        <li onClick={(e)=>handleMenuIconClick(e)}><Link to="/About">About Us</Link></li>
+        <li onClick={(e)=>handleMenuIconClick(e)}><Link to="/Contact">Contact Us</Link></li>
+    
     </ul>
     </div>
 
