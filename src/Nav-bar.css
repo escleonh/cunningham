@@ -2,7 +2,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(242, 241, 241);
 }
 nav .mainMenu ul{
@@ -13,9 +13,16 @@ nav .mainMenu ul{
 nav .mainMenu ul li{
     display: inline-block;
 }
+.quoteBtn{
+    background-color: rgb(232, 232, 13);
+    padding: 6px;
+}
 nav a{
     text-decoration: none;
     color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
     
 }
 .menuIcon{
