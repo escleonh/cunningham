@@ -3,13 +3,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 20%;
-    height: 45vh;
+    height: 40vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+    margin-bottom: 8vh;
 
 }
 .companyName{
@@ -23,6 +23,7 @@
     font-size: 2.2rem;
     font-family:'Lato', sans-serif;
     font-weight: 900;
+    /* margin-bottom: 10vh; */
 }
 .homeTaglinne{
     color: white;
@@ -33,7 +34,7 @@
     gap: 10px;
 }
 .homeCTABtns button{
-    background-color: #06b31a;
+    background-color: yellow;
     padding: 8px;
     width: 100px;
     cursor: pointer;
@@ -42,15 +43,52 @@
     font-weight: 500;
     color: black;
 }
+.homeCTABtns button:hover{
+    background-color: yellow;
+}
+.titleHeading{
+    text-align: center;
+    margin-bottom: 20px;
+}
 .servicesContiner{
     /* margin-top: 40px; */
     height: 30vh;
     display: flex;
     width: 80vw;
-    margin: 40px auto 0 auto;
+    margin: 0 auto;
     justify-content:space-evenly;
     align-items: flex-end;
     /* align: flex-start; */
     gap: 25px;
     flex-wrap: wrap;
+    text-align: center;
+}
+.servicesContiner>div{
+max-width: 150px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+}
+.serviceOneImg{
+    
+    background-image: url('gardener-mowing-lawn-landscape-design-green-grass-background.jpeg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 150px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .companyName{
+        width: 75vw;
+        font-size: 1.2rem;
+        padding: 20px;
+
+    }
+    .grassBgContainer{
+        height: 30vh;
+    }
 }

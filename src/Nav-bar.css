@@ -2,12 +2,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 45px;
     background-color: rgb(242, 241, 241);
 }
 nav .mainMenu ul{
     display: flex;
-    gap: 10px;
+    gap: 40px;
 
 }
 nav .mainMenu ul li{
@@ -91,6 +91,7 @@ nav a{
     }
     nav{
         justify-content: space-between;
+        padding: 20px;
         
     }
     .mobileLeftNavCol{
