@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return <nav>
     <div className='mobileLeftNavCol'></div>
-    <div>LOGO</div>
+    <div><Link to="/" >LOGO</Link></div>
     <div className='mainMenu'>
     <ul >
         <li><Link to="#services" >Services</Link></li>
