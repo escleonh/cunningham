@@ -24,6 +24,7 @@ const Navbar = () => {
     <div><Link to="/" >LOGO</Link></div>
     <div className='mainMenu'>
     <ul >
+        <li><Link to="/" >Home</Link></li>
         <li><Link to="#services" >Services</Link></li>
         <li><Link to="#ourWork">Our Work</Link></li>
         <li><Link to="/About">About Us</Link></li>
